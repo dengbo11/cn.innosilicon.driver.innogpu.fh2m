@@ -14,6 +14,13 @@ package:
     VK_ADD_DRIVER_FILES: $PREFIX/vulkan/icd.d/innoconf.json
     LIBVA_DRIVERS_PATH: $ORIGIN:$PREFIX/lib/dri
     OCL_ICD_VENDORS: $ORIGIN:$PREFIX/OpenCL/vendors
+  deviceNodes: [
+    {
+      "path": "/dev/vpu0",
+      "hostPath" : "/dev/vpu0"
+    }
+  ]
+
 
 base: org.deepin.base/25.2.1
 
